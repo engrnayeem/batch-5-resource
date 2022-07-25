@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Form | part 02| batch -05</title>
+</head>
+<body>
+	<form method="get">
+		<fieldset>
+		<legend align="center">Student Info</legend>
+		<table width="80%" align="center">
+			<tr>
+				<td>Logo Image</td>
+				<td>2</td>
+				<td>Company name and Button</td>
+			</tr>
+			<tr>
+				<td width="30%">
+					<label for="fname">First Name*</label>
+				</td>
+				<td width="10%">:</td>
+				<td width="60%">
+					<input type="text" name="firstName" placeholder="BASIS" id="fname" readonly="readonly" required="required" size="40" /> 
+				</td>
+			</tr>
+			<tr>
+				<td width="30%">
+					<label for="lname">Last Name* </label>
+				</td>
+				<td width="10%">:</td>
+				<td width="60%">
+					<input type="text" name="lastName" placeholder="Last NAME" id="lname" /> 
+				</td>
+			</tr>
+			<tr>
+				<td width="30%">
+					<label for="email">Email :</label>
+				</td>
+				<td width="10%">
+					:
+				</td>
+				<td width="60%">
+					<input type="email" name="email" id="email" />
+				</td>
+			</tr>
+			<tr>
+				<td width="30%">
+					<label for="pws">Password :</label>
+				</td>
+				<td width="10%">
+					:
+				</td>
+				<td width="60%">
+					<input type="password" name="password" id="pws" />
+				</td>
+			</tr>
+			<tr>
+				<td width="30%">
+					<label for="phone">Enter a phone number:</label>
+				</td>
+				<td width="10%">
+					:
+				</td>
+				<td width="60%">
+					<input type="tel" id="phone" name="phone" placeholder="+880-12345-678000" pattern="[+][0-9]{3}-[0-9]{5}-[0-9]{6}" required />
+				</td>
+			</tr>
+			<tr>
+				<td width="30%">
+					<label for="m">Gender: </label>
+				</td>
+				<td width="10%">
+					:
+				</td>
+				<td width="60%">
+			  		<input type="radio" name="gender" id="m" value="male">
+			  		<label for="m">Male </label>
+			  		
+			  		<input type="radio" name="gender" id="f" value="female">
+			  		<label for="f">Female </label>
+			  		
+			  		<input type="radio" name="gender" id="o" value="other"/>
+			  		<label for="o">Other </label>
+				</td>
+			</tr>
+			<tr>
+				<td width="30%">
+					<label for="m">Checkbox: </label>
+				</td>
+				<td width="10%">
+					:
+				</td>
+				<td width="60%">
+			  		<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+				  	<label for="vehicle1"> I have a bike</label>
+				  	<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+				  	<label for="vehicle2"> I have a car</label><br>
+				  	<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+				  	<label for="vehicle3"> I have a boat</label>
+				</td>
+			</tr>
+			<tr>
+				<td width="30%">
+					<label for="sub">Choose a Subject:</label>
+				</td>
+				<td width="10%">
+					:
+				</td>
+				<td width="60%">
+			  		<select id="sub" name="sub" size="2" multiple="multiple">
+					    <option value="html" >HTML</option>
+					    <option value="css">CSS</option>
+					    <option value="js" selected="selected">JS</option>
+					    <option value="bs">BS</option>
+				  	</select>
+				  <input list="browsers" name="browser" />
+				  <datalist id="browsers">
+				    <option value="Internet Explorer" />
+				    <option value="Firefox" />
+				    <option value="Chrome" />
+				    <option value="Opera"/>
+				    <option value="Safari"/>				
+				  </datalist>
+				</td>
+			</tr>
+			<tr>
+				<td width="30%">
+					<label for="text">Textarea</label>
+				</td>
+				<td width="10%">
+					:
+				</td>
+				<td>
+					<textarea name="message" rows="5" cols="20" id="text">
+					 Feedback
+					</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="myfile">Select a file:</label>
+				</td>
+				<td>:</td>
+				<td>
+					<input type="file" id="myfile" name="myfile" accept="image/.jpg">
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="3" align="center"><input type="submit"  value="Submit"  />
+					<input type="reset" />
+				</td>
+			</tr>
+		</table>
+		</fieldset>
+	</form>
+</body>
+</html>
